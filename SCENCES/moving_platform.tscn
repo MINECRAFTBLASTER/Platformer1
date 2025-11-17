@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq2apuse2555c"]
+
+[ext_resource type="Texture2D" uid="uid://bxnwwbwpd78u8" path="res://ASSETS/moving plat.png" id="1_oa1ci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31e3d"]
+size = Vector2(96, 32)
+
+[node name="MOVING PLATFORM" type="AnimatableBody2D"]
+
+[node name="Movng" type="Sprite2D" parent="."]
+position = Vector2(-18, -17)
+texture = ExtResource("1_oa1ci")
+region_enabled = true
+region_rect = Rect2(0, 0, 96, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-18, -17)
+shape = SubResource("RectangleShape2D_31e3d")
